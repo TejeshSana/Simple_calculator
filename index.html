@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFEY1vVXof8BcFetsn1jPNrrBO8I1Frmtf9r9Hdk&s" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Iso">
+</head>
+<body>
+    <br>
+    <br>
+
+    <h1><strong><em>CALCULATOR</em></strong></h1>
+    <div class="main">
+        <form id="form">
+        <div>
+            <input type="text" name="display" id="output">
+            <input type="button" value="⌫" class="del btn operator" onclick="display.value=display.value.toString().slice(0,-1)">
+        </div>
+        <div class="first line">
+            <input type="button" value="C" class="C btn operator"  onclick="display.value=' '">
+            <input type="button" value="%" class="rem btn operator"  onclick="display.value+='%'">
+            <input type="button" value="√" class="sq btn operator"  onclick="display.value=Math.sqrt(display.value)">
+            <input type="button" value="/" class="div btn operator"  onclick="display.value+='/'">
+        </div>
+        <div class="second line">
+            <input type="button" value="7" class="seven btn"  onclick="display.value+='7'">
+            <input type="button" value="8" class="eight btn"  onclick="display.value+='8'">
+            <input type="button" value="9" class="nine btn"  onclick="display.value+='9'">
+            <input type="button" value="*" class="mul btn operator"  onclick="display.value+='*'">
+        </div>
+        <div class="third line">
+            <input type="button" value="4"  class="four btn"  onclick="display.value+='4'">
+            <input type="button" value="5" class="five btn"  onclick="display.value+='5'">
+            <input type="button" value="6" class="six btn"  onclick="display.value+='6'">
+            <input type="button" value="-" class="sub btn operator"  onclick="display.value+='-'">
+        </div>
+        <div class="fourth line">
+            <input type="button" value="1"  class="one btn"  onclick="display.value+='1'">
+            <input type="button" value="2" class="two btn"  onclick="display.value+='2'">
+            <input type="button" value="3" class="three btn"  onclick="display.value+='3'">
+            <input type="button" value="+" class="plus btn operator"  onclick="display.value+='+'">
+        </div>
+        <div class="fifth line">
+            
+            <input type="button" value="00" class="double btn"  onclick="display.value+='00'">
+            <input type="button" value="0" class="zero btn"  onclick="display.value+='0'">
+            <input type="button" value="." class="point btn"  onclick="display.value+='.'">
+            <input type="button" value="=" class="eq btn " onclick="display.value=eval(display.value)">
+        </div>
+        </form>
+    </div>
+
+</body>
+</html>
