@@ -66,3 +66,30 @@ h1{
     height: 60px;
     color:aquamarine;  
 }
+
+/*Responsive*/
+@media (max-width:441px){
+    body{
+        background-size: 100%;
+    
+    }
+    h1{
+        font-size: 28px;
+    }
+    .btn{
+        height: 35px;
+        width:45px;
+        font-size: medium;
+        box-shadow: 1px 1px 1px black;
+    }
+    .line{
+        padding: 5px;
+    }
+    #output{
+        height: 25px;
+        width:122px;
+        padding: 4.5px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+}
